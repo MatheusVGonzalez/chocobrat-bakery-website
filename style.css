@@ -37,10 +37,11 @@ h2{
 .quote a{
     font-size: 14px;
     background-color: #faefd2;
-    padding: 3px 8px;
     border-radius: 20px;
+    padding: 3px 8px;
 }
 blockquote{
+    margin-top: 10px;
     position: relative;
 }
 .quote:before{
@@ -109,6 +110,9 @@ footer section{
 footer li{
     display: inline-block;
     margin-left: 30px;
+}
+footer .sns{
+    margin-right: 30px;
 }
 footer img{
     width: 15px;
