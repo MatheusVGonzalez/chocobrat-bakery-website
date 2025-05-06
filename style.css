@@ -1,0 +1,161 @@
+#content {
+    display: grid;
+    grid-template-areas: 
+        "topnav topnav topnav topnav"
+        "principal-message principal-message cake-image cake-image"
+        "sweet-images sweet-images sweet-images sweet-images"
+        "middle-text-left middle-text-left middle-text-right middle-text-right"
+        "google-images google-images google-images google-images";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcf7e8;
+    margin: 0;
+}
+    
+
+.principal-message,
+.cake-image,
+.sweet-images,
+.middle-text-left,
+.middle-text-right,
+.google-images {
+    display: flex;
+}
+
+.order-button, .see-button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-button {
+    background-color: #694546;
+    color: white;
+}
+
+.see-button {
+    background-color: transparent;
+    color: #694546;
+    border: 2px solid #694546;
+}
+
+.google-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    text-align: center;
+    width: 180px;
+    padding: 10px;
+}
+
+
+.topnav {
+    grid-area: topnav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+
+}
+
+.topnav h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #694546;
+}
+
+.topnav a{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 10px;
+    font-size: 17px;
+    
+  }
+
+.topnav img {
+    float: right;
+    border: none;
+    width: 30px;
+}
+
+.principal-message {
+    grid-area: principal-message;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fcf7e8;
+    overflow: hidden;
+}
+
+.cake-image {
+    grid-area: cake-image;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fcf7e8;
+    overflow: hidden;
+}
+
+.sweet-images {
+    grid-area: sweet-images;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 20px;
+    background-color: #fcf7e8;
+    overflow: hidden;
+}
+
+.middle-text-left {
+    grid-area: middle-text-left;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fcf7e8;
+    overflow: hidden;
+}
+
+.middle-text-right {
+    grid-area: middle-text-right;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fcf7e8;
+    overflow: hidden;
+}
+
+.google-images {
+    grid-area: google-images;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fcf7e8;
+    overflow: hidden;
+}
