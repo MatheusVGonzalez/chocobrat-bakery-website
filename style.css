@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+main{
+    text-align: center;
+    padding: 0 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+h1,h2,h3,p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1,h3{
+    color: #572c2d;
+}
+h2{
+    font-size: 50px;
+}
+/*This is the part which I done(Section-3)*/
+.section3{
+    margin-top: 80px;
+    padding: 0 150px;
+}
+/*quote section*/
+.quote{
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+    margin: 0 0 30px;
+}
+.quote a{
+    font-size: 14px;
+    background-color: #faefd2;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+blockquote{
+    position: relative;
+}
+.quote:before{
+    position: absolute;
+    top: -60px;
+    left: 30px;
+    content: '“';
+    font-size: 180px;
+    font-weight: bold;
+    color: #faefd2;
+}
+.quote:after{
+    position: absolute;
+    top: 90px;
+    right: 70px;
+    content: '”';
+    font-size: 180px;
+    font-weight: bold;
+    color: #faefd2;
+    z-index: -1;
+}
+
+/*ceo-section*/
+.ceo h3{
+    margin-bottom: 8px;
+}
+.ceo-pic{
+    margin: 70px 0 10px;
+    width: 90px;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+}
+/*button css*/
+.button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.button button{
+    border: none;
+    border-radius: 50px;
+    background-color: #fcedce;
+    width: 10px;
+    aspect-ratio: 1/1;
+}
+.button button:nth-child(2){
+    background-color: #4a1d1e;
+}
+/*from here it's footer css*/
+footer{
+    margin-top: 80px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: #fcedce;
+}
+footer section{
+    margin: 50px 0;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer li{
+    display: inline-block;
+    margin-left: 30px;
+}
+footer img{
+    width: 15px;
+    aspect-ratio: 1/1;
+}
+
+hr{
+    border: none;
+    background-color: #ecddbf;
+    height: 1px;
+}
