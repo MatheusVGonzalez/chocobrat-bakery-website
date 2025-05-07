@@ -15,6 +15,7 @@ body {
         "google-images google-images google-images google-images";
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    overflow-x: hidden;
 }
 
 .topnav {
@@ -123,13 +124,14 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    justify-content: center;
+    justify-content: left;
     margin-top: 5px;
 }
 
 .rating-group img {
-    width: 60px;
-    height: auto;
+    
+    max-width: 100px;
+    max-height: 50px;
 }
 
 .rating {
@@ -146,9 +148,9 @@ body {
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 100px;
-    padding-right: 200px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 100px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -159,6 +161,7 @@ body {
     font-size: 20px;
     text-align: center;
     align-items: center;
+    margin-left: 10px;
     display: flex;
     padding-right: 40px;
     padding-left: 50px;
@@ -166,15 +169,14 @@ body {
 
 .mini-gallery {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     gap: 10px;
-    border-radius: 10px;
     margin-top: 10px;
 }
 
 .mini-gallery img {
-    width: 20x0px;
-    height: 100px;
+    width: 160px;
+    height: 80px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -189,14 +191,19 @@ body {
 
 .middle-text-left h2 {
     color: #694546;
-    font-size: 24px;
+    font-size: 50px;
+    text-align: right;
+    margin-right: 20px;
+
 }
 
 .middle-text-right {
     grid-area: middle-text-right;
     font-size: 16px;
     line-height: 1.6;
+    border-left: 3px solid #bba8a5;
 }
+
 
 .google-images {
     grid-area: google-images;
@@ -216,13 +223,15 @@ body {
 }
 
 .product-card img {
-    width: 100%;
+    width: 180px;
+    height: 200px;
     border-radius: 8px;
 }
 
 .name-review {
     font-weight: 600;
     margin: 10px 0 5px 0;
+    text-align: left;
 }
 
 
